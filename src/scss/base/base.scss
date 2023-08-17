@@ -1,0 +1,25 @@
+@use "./variables.scss" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: $primary;
+  font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
+image {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
