@@ -1,0 +1,14 @@
+@use "../base/variables.scss" as *;
+
+.header-to-nav {
+  position: fixed;
+  height: 100vh;
+  width: 15rem;
+  background-color: rgba(240, 248, 255, 0.047);
+}
+
+.container {
+  min-height: 100vh;
+  margin-left: 15rem;
+  background-color: aqua;
+}
