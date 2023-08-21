@@ -1,0 +1,13 @@
+@use "./variables.scss" as *;
+
+.ml-15 {
+  margin-left: $default-rem;
+}
+
+.left-0 {
+  left: 0rem;
+}
+
+.left-15 {
+  left: $default-rem;
+}
