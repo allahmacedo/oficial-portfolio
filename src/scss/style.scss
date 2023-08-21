@@ -1,5 +1,10 @@
 // base
-  @forward "./base/base.scss";
+@forward "./base/base.scss";
 
-  // layout
-  @forward "./layout/header.scss";
+// layout
+@forward "./layout/header.scss";
+@forward "./layout/containers.scss";
+@forward "./layout/main.scss";
+// components 
+@forward "./components/menu.scss";
+@forward "./base/utilities.scss";
