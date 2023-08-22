@@ -1,0 +1,23 @@
+@use "../base/variables.scss" as *;
+@use "../base/mixins.scss" as *;
+
+.header-to-nav {
+  position: fixed;
+  left: -15rem;
+  height: 100vh;
+  width: $default-rem;
+  background-color: $secondary;
+  @include transition;
+}
+
+@media screen and (min-width: 600px) {
+  .header-to-nav {
+    left: 0rem;
+    width: 8rem;
+  }
+}
+
+.expanded-menu {
+  width: $default-rem;
+  left: 0rem;
+}

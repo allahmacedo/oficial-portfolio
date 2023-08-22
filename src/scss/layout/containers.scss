@@ -1,0 +1,16 @@
+@use "../base/mixins.scss" as *;
+@use "../base/variables.scss" as *;
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  margin-left: 0rem;
+  background-color: $primary;
+  @include transition;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    margin-left: 8rem;
+  }
+}
