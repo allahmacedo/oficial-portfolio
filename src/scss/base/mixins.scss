@@ -1,4 +1,15 @@
 
 @mixin transition {
-  transition: all 700ms ease-in-out;
+  transition: all 400ms linear;
 }
+
+
+@mixin flex-content($justify , $align:none) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// @mixin linear-gradient($color01, $color02) {
+//   background-image: linear-gradient($color01, $color02);
+// }
