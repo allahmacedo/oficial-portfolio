@@ -10,187 +10,68 @@
   <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-  <header class="header-to-nav"id="menu-nav">
-    <nav>
-      <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
+  <header class="menu_area"id="menu-nav">
+    <section class="nav-header" id="nav-top">
+      <div class="nav-header__img">
+        <img src="./src/assets/images/eu_n-min.jpg" alt="image" loading="lazy">
+      </div>
+      <div class="nav__description" id="nav-description">
+        <h3>Allah Coder</h3>
+        <p>Web Front-End</p>
+      </div>
+    </section>
+
+    <nav id="menu">
+      <ul class="menu-list" id="nav-list">
+        <li>
+          <a href="#home" class="btn active nav-link ">
+            <span>Home</span>
+            <i class="fa-solid fa-house"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="#sobre" class="nav-link btn">
+            <span>Sobre</span> 
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="#portfolio" class="nav-link btn">
+            <span>Portfolio</span>
+            <i class="fa-solid fa-code"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="#contato" class="nav-link btn">
+            <span>Contato</span>
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
       </ul>
     </nav>
+
+    <footer class="footer-menu">
+      <section class="footer-box">
+        <a href="https://www.linkedin.com/in/allah-macedo-1b3613122/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/allahmacedo" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </section>
+    </footer>
   </header>
+
   <div class="container" id="main-container">
     <div class="menu-icon">
-      <i class="fa-solid fa-bars bars" onclick="changeLayout()"></i>
+      <i class="fa-solid fa-bars bars" onclick="changeLayout(media) , toggleMenu(media)"></i>
     </div>
     <main>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
+      <section id="home" class="section-default">
+        <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
       </p>
       <p>
@@ -199,10 +80,10 @@
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
       </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
-      </p>
-      <p>
+      </section>
+      
+      <section id="sobre" class="section-default">
+        <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
       </p>
       <p>
@@ -211,7 +92,10 @@
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
       </p>
-      <p>
+      </section>
+      
+      <section id="portfolio" class="section-default">
+        <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
       </p>
       <p>
@@ -220,7 +104,10 @@
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
       </p>
-      <p>
+      </section>
+      
+      <section id="contato" class="section-default">
+        <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
       </p>
       <p>
@@ -235,12 +122,14 @@
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus nulla beatae dignissimos est reiciendis enim, eaque ut, maxime, iure ex aliquid doloremque saepe praesentium! Voluptate temporibus necessitatibus dolores hic!
       </p>
-
+      </section>
     </main>
     <footer></footer> 
   </div>
 
-  <script src="./src/script.js"></script>
+  <script src="./src/js/script.js"></script>
+  <script src="./src/js/scj.js"></script>
+  <script src="./src/js/navActive.js"></script>
   <script src="https://kit.fontawesome.com/c97d8e6f3d.js" crossorigin="anonymous"></script>
 </body>
 </html>

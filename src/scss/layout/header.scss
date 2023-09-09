@@ -1,23 +1,27 @@
 @use "../base/variables.scss" as *;
 @use "../base/mixins.scss" as *;
+// @use "../base/utilities.scss" as *;
 
-.header-to-nav {
+
+.menu_area{
+  @include flex-content(space-between);
+  flex-direction: column;
   position: fixed;
-  left: -15rem;
+  left: -17rem;
   height: 100vh;
-  width: $default-rem;
+  width: 17rem;
   background-color: $secondary;
   @include transition;
 }
 
 @media screen and (min-width: 600px) {
-  .header-to-nav {
+  .menu_area {
     left: 0rem;
     width: 8rem;
   }
 }
 
-.expanded-menu {
+.menu--expanded {
   width: $default-rem;
   left: 0rem;
 }
