@@ -1,6 +1,7 @@
 @use "./variables.scss" as *;
+@use "./mixins.scss" as *;
 
-.ml-15 {
+.ml-17 {
   margin-left: $default-rem;
 }
 
@@ -8,6 +9,27 @@
   left: 0rem;
 }
 
-.left-15 {
+.left-17 {
   left: $default-rem;
+}
+
+.section-default {
+  min-height: 100vh;
+  padding: 8% 2% 5% 2%; 
+  border-bottom: 1px solid #ccc;
+}
+
+%radius4 {
+  border-radius: 4px;
+}
+
+// %nav-default {
+//   padding: 20px 10px;
+//   letter-spacing: .04rem;
+//   // @include linear-gradient(rgb(50, 49, 49) , $secondary);
+//   box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.163);
+// }
+
+.l-17 {
+  left: -17rem;
 }
