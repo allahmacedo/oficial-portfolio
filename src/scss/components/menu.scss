@@ -1,18 +1,194 @@
 @use "../base/variables.scss" as *;
+@use "../base/mixins.scss" as *;
+// @use "../base/utilities.scss" as *;
 
+// NAV HEADER 
+.nav-header {
+  @include flex-content(space-between, center);
+  padding: 20px 10px;
+  letter-spacing: .04rem;
+  box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.163);
+  border-radius: 4px;
+}
+
+.nav-header .nav-header__img {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  box-shadow: 0 1px 10px rgba(128, 255, 0, 0.54);
+  border-radius: 4px;
+
+  img { 
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+  }
+}
+
+.nav__description {
+  width: 60%;
+  text-align: right;
+
+  h3 {
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: lighter;
+  }
+
+  p {
+    padding-top: .4rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: rgb(159, 159, 159);
+  }
+}
+
+// NAV HEADER ONK 
+.nav-header__onk {
+  @include flex-content(space-between, center);
+  flex-direction: column;
+  padding: 20px 10px;
+  letter-spacing: .04rem;
+  background-image: linear-gradient(rgb(50, 49, 49) , $secondary);
+  box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.163);
+}
+
+.nav-header__onk .nav-header__img {
+  width: 80px;
+  height: 80px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 10px rgba(128, 255, 0, 0.54);
+
+  img { 
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+
+.nav__description--onk {
+  margin-top: 10px;
+  border-radius: 4px;
+  text-align: center;
+
+  h3 {
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-weight: lighter;
+  }
+
+  p {
+    padding-top: .4rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: rgb(159, 159, 159);
+  }
+}
+/////////////////////////////////
+
+
+// NAV 
+.menu-list {
+  padding: 20px 10px;
+  background-color: $secondary;
+}
+
+.menu-list a {
+  @include flex-content(space-between, center);
+  padding: 15px;
+  margin: 5px 0;
+  color: bisque;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: 0.05rem solid transparent;
+}
+
+.menu-list li i {
+  @include flex-content(center, center);
+  width: 25px;
+  height: 25px;
+  color: rgb(93, 159, 113);
+  font-size: 1.2rem;
+}
+//////////////////////////////////////
+
+// NAV ONK
+.menu-list__onk li {
+  margin: 5px 0;
+}
+
+.menu-list__onk .btn {
+  @include flex-content(space-between, center);
+  flex-direction: column-reverse;
+  padding: 15px;
+  color: bisque;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 0.05rem solid transparent;
+  margin: 0 15px;
+}
+
+.menu-list__onk li i {
+  @include flex-content(center, center);
+  width: 25px;
+  height: 25px;
+  color: rgb(110, 155, 110);
+  font-size: 1.2rem;
+}
+
+//////////////////////////////////////
+
+
+// NAV FOOTER
+.footer-menu {
+  background-image: linear-gradient($secondary , rgb(50, 49, 49));
+  box-shadow: -1px -2px 4px rgba(0, 0, 0, 0.163);
+}
+
+.footer-box {
+  @include flex-content(start, center);
+  padding: 20px 10px;
+}
+
+.footer-box a {
+  margin: 0 10px;
+  padding: 8px;
+  color: bisque;
+  background-color: #3C4441;
+  font-size: 1.2rem;
+  border-radius: 4px;
+}
+
+
+// ICON MENU 
 .menu-icon {
   position: fixed;
   width: 100%;
   padding: 15px 20px;
   background-image: linear-gradient($primary, rgba(20, 19, 19, 0.612));
 
-
   .bars {
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     font-size: 1.5rem;
     cursor: pointer;
     color: #bcb9b9;
-    background-color: rgba(139, 138, 138, 0.714);
+    background-color: rgba(67, 65, 65, 0.614);
     border-radius: 4px;
   }
+}
+/////////////////////////////////////////////
+
+// BTN ACTIVE 
+.btn.active {
+  color: aliceblue;
+  background-color: #4d4949cd;
+  border: 0.05rem solid chartreuse;
+}
+
+.btn.active i{
+  color: chartreuse;
 }
