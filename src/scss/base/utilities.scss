@@ -19,17 +19,18 @@
   border-bottom: 1px solid #ccc;
 }
 
+.l-17 {
+  left: -17rem;
+}
+
 %radius4 {
   border-radius: 4px;
 }
 
-// %nav-default {
-//   padding: 20px 10px;
-//   letter-spacing: .04rem;
-//   // @include linear-gradient(rgb(50, 49, 49) , $secondary);
-//   box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.163);
-// }
-
-.l-17 {
-  left: -17rem;
+%toProfile {
+  flex-grow: 0;
+  padding: 20px 10px;
+  letter-spacing: .04rem;
+  box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.163);
+  background-image: linear-gradient(rgb(50, 49, 49) , $secondary);
 }

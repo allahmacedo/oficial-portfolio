@@ -4,25 +4,25 @@
 function myFunction(x) {
   const sa = document.querySelector("#nav-top")
   const desc = document.querySelector("#nav-description")
-  const menuNav = document.querySelector("#menu-nav")
+  const menuNav = document.querySelector("#header_box")
   const mainContent = document.querySelector("#main-container")
 
   if (x.matches) {
-    sa.classList.remove("nav-header")
-    sa.classList.add("nav-header__onk")
+    sa.classList.remove("profile")
+    sa.classList.add("profile--onk")
 
-    desc.classList.remove("nav__description")
-    desc.classList.add("nav__description--onk")
+    desc.classList.remove("profile__description")
+    desc.classList.add("profile--onk__description")
 
     menuNav.classList.remove("menu--expanded")
 
     mainContent.classList.remove("ml-17")
   } else {
-    sa.classList.add("nav-header")
-    sa.classList.remove("nav-header__onk")
+    sa.classList.add("profile")
+    sa.classList.remove("profile--onk")
 
-    desc.classList.add("nav__description")
-    desc.classList.remove("nav__description--onk")
+    desc.classList.add("profile__description")
+    desc.classList.remove("profile--onk__description")
   }
 }
 
@@ -40,19 +40,14 @@ function navBody(x) {
 }
 
 function func(x) {
-  const menuNa = document.querySelector("#menu-nav")
+  const menuNa = document.querySelector("#header_box")
   const mainConten = document.querySelector("#main-container") 
 
   if (x.matches) {
-    // menuNa.classList.add("l-17")-
     menuNa.classList.remove("left-0")
     menuNa.classList.remove("menu--expanded")
 
     mainConten.classList.remove("ml-17")
-
-    // const mini = document.querySelector("#menu-nav");
-    // mini.classList.toggle("l-17")
-    // mini.classList.toggle("left-0")
   } else {
     menuNa.classList.remove("left-0")
   }

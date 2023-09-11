@@ -10,42 +10,44 @@
   <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-  <header class="menu_area"id="menu-nav">
-    <section class="nav-header" id="nav-top">
-      <div class="nav-header__img">
+  <header class="header_box"id="header_box">
+    <!-- menu_area -->
+
+    <section class="profile" id="nav-top">
+      <div class="profile__image">
         <img src="./src/assets/images/eu_n-min.jpg" alt="image" loading="lazy">
       </div>
-      <div class="nav__description" id="nav-description">
+      <div class="profile__description" id="nav-description">
         <h3>Allah Coder</h3>
         <p>Web Front-End</p>
       </div>
     </section>
 
-    <nav id="menu">
+    <nav id="menu" class="menu">
       <ul class="menu-list" id="nav-list">
         <li>
-          <a href="#home" class="btn active nav-link ">
+          <a href="#home" class="btn active menu__link ">
             <span>Home</span>
             <i class="fa-solid fa-house"></i>
           </a>
         </li>
 
         <li>
-          <a href="#sobre" class="nav-link btn">
-            <span>Sobre</span> 
+          <a href="#sobre" class="btn menu__link">
+            <span>Sobre</span>  
             <i class="fa-solid fa-user"></i>
           </a>
         </li>
 
         <li>
-          <a href="#portfolio" class="nav-link btn">
+          <a href="#portfolio" class="btn menu__link">
             <span>Portfolio</span>
             <i class="fa-solid fa-code"></i>
           </a>
         </li>
 
         <li>
-          <a href="#contato" class="nav-link btn">
+          <a href="#contato" class="btn menu__link">
             <span>Contato</span>
             <i class="fa-solid fa-envelope"></i>
           </a>
@@ -63,6 +65,7 @@
         </a>
       </section>
     </footer>
+    
   </header>
 
   <div class="container" id="main-container">
