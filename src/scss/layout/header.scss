@@ -4,15 +4,11 @@
 
 
 .header_box{
-  // @include flex-content(space-between);
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  
-  
   position: fixed;
   left: -17rem;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   width: 17rem;
   background-color: $secondary;
   @include transition;
@@ -23,9 +19,4 @@
     left: 0rem;
     width: 8rem;
   }
-}
-
-.menu--expanded {
-  width: $default-rem;
-  left: 0rem;
 }
