@@ -23,6 +23,12 @@
   left: -17rem;
 }
 
+.menu--expanded {
+  width: $default-rem;
+  left: 0rem;
+}
+
+
 %radius4 {
   border-radius: 4px;
 }
