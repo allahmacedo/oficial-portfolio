@@ -4,7 +4,7 @@
 }
 
 
-@mixin flex-content($justify , $align:none) {
+@mixin flex-content($justify:none , $align:none) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
